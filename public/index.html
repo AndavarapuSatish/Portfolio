@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="Images/letter-s (1).png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e082aa5ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+    
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience1">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!-- <p>Front - End Developer</p> -->
+            <div class="mainh">
+            <section class="animation">
+                <div class="first"><div>Front-End Developer</div></div>
+                <div class="second"><div>Full Stack Web Developer</div></div>
+                <div class="third"><div>MERN Stack Developer</div></div>
+            </section>
+            </div>
+            <h1>Hi, I'm <span>Andavarapu<span><br>Satish</h1>
+        </div>
+    </div>
+</div> 
+
+
+<!-------about------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/DSC_6475-removebg-.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Experienced Analytics intern at HighRadius with a passion for migrating MySQL
+                     data to Snowflake database and aligning SQL reports with Snowflake reports.
+                      Proficient in MySQL and frontend development. Eagerly seeking a dynamic career
+                       in the tech industry.</p>
+
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Skills</span><br>Python, JavaScript</li>
+                        <li><span>Web Development Skills</span><br>HTML, CSS, SASS</li>
+                        <li><span>Frameworks/Libraries</span><br>React JS, Bootstrap, jQuery, Node JS, Express JS </li>
+                        <li><span>Databases</span><br>MySQL, Snowflake, MongoDB</li>
+                        <li><span>Web Dev tools</span><br>Visual Studio Code, Chrome Dev tools</li>
+                        <li><span>Area of interest</span><br> I am deeply passionate about full-stack web development,
+                             with a strong interest in the following areas:
+                            Front-end & Back-end development, Database management, Deployment, Collaboration, and Learning.
+                            </li>
+
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship Experience</span><br>Analytics Department Trainee (06/2022 - 05/2023)</li>
+                        <li><span>Web development Internship</span><br>Building a responsive Website</li>
+
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2023</span><br>B.Tech (ECE) in GIET University, Gunupur, IN</li>
+                        <li><span>2017 - 2019</span><br>Intermedita in Sri Chaitanya jr. college, Visakhapatnam, IN</li>
+                        <li><span>2016 - 2017</span><br>SSC in Keshava reddy school, Srikakulam, IN</li>
+
+                    </ul>
+                 </div>
+            </div>    
+            
+        </div>
+    </div>
+</div>
+
+
+<!-------services---->
+<div id="experience1">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>
+                <h2>Analytics Department Trainee</h2>
+                <p>I have successfully completed my internship at Highradius 
+                    Corporation as an Analytics Intern. It has been an incredible journey, and I am grateful 
+                    for the opportunity to work with such a talented and dedicated team.<br>
+                    <br>
+                    During my internship, I was able to apply the theories I learned to real-world projects and gain 
+                    hands-on experience in Analytics department.<br>
+                    <br>
+                    I am proud of the work I was able to contribute to the company by Migration of Data from MySQL server to 
+                    Snowflake server and done report analysis. In the period of this internship i have experienced on the SQL, 
+                    Snowflake, Data migration, highcharts, crossfilters .
+                </p>
+                    
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-------Portfolio---->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="Images/weathersc.png">
+            <div class="layer">
+                <h3>Weather App</h3>
+                <p>This websites shows the weather report of particular city which you have entered.
+                    Check it here.</p>
+                    <a href="" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/todolist.png" class="todolist">
+            <div class="layer">
+                <h3>To-Do List App</h3>
+                <p>In this website we can keep note of our daily task and if completed the task we can mark it as completed. 
+                    Also it have local storage option use of this is the tasks are not get erased when we reload the page.
+                    Check it here.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="Images/bmi.png" class="bmi">
+            <div class="layer">
+                <h3>BMI Calculator App</h3>
+                <p>This websites show the body mass index. And shows you are in which weight range.
+                    Check it here.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+   <a href="mywork.html" class="btn" target="_blank">See more</a>
+
+</div>
+</div>
+
+<!-----contact---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> ssati753@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7978839802</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/andavarapu-satish-b4a158215" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Satish_sardaar1?t=uiJk-dm8WPiG9xH8T-ymAQ&s=09" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/satish_sardaar_?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/satish.`sardaar.3?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Images/Satish_Andavarapu_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                    <input type="text" name="Email" id="email" placeholder="Your Email" required>
+                    <input type="text" name="Phone" id="phone" placeholder="Your Number" required>
+                    <textarea name="Message" id="message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Satish. Made with <i class="fa-solid fa-heart"></i>. </p>
+    </div>
+</div>
+
+<script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+</script>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+<!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztoZL4pTnIfmIDZvJshjxwNSkSNwG6eKLfZ4-idrMKNSxgmQcASydw_AbgfvA_iTjcZg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
+
+  <script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        const userEmailAddress = document.getElementById("email").value;
+        Email.send({
+        SecureToken: "81ae4c19-1994-4777-9e94-935f03bd7fe3",
+        To : '19gietuece074@gmail.com',
+        From : 'ssati753@gmail.com',
+        Subject : "New Contact Form Enquiry",
+        Body : "Name:" + document.getElementById("name").value
+                + "<br> Email:" + userEmailAddress
+                + "<br> Phone no:" + document.getElementById("phone").value
+                + "<br> Message:" + document.getElementById("message").value,
+        ReplyTo: userEmailAddress,        
+
+        })
+        .then(
+        message => alert(message)
+        );
+    }
+</script>
+</body>
+</html>
